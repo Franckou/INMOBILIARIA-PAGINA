@@ -1,0 +1,141 @@
+/*  CARRUSEL */
+
+.banner img{
+    width: 100vw;
+    height: 90vw;
+    object-fit: cover;
+}
+
+.banner {
+    width: 100%;
+    height: 90vw;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0; /*Ajuste para considerar la altura del encabezado */
+}
+
+.slide {
+    display: flex;
+    width: 400%;
+    animation: slide 30s infinite ;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% {margin-left: -100%; }
+    45% { margin-left: -100%; }
+    
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    95% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+/*  SECCION MION PROPIEDADES */
+
+.about {
+    padding: 3vh;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 900;
+} 
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image{
+    width: 60vw;
+    text-align: center;
+    display: inline-block;
+}
+
+.about-image img {
+    border-radius: 15px;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about p {
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 3vw 2vw;
+    margin: 0 1vw 0 0;
+}
+
+
+/* SECCION DE BUSQUEDA */
+
+.find {
+    padding: 2vw;
+    align-items: center;
+    text-align: center;
+    background: url('https://www.destinocordoba.com.ar/wp-content/uploads/2018/10/DSC_0057.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.find-tabla {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    /* max-width: 600px; */
+}
+
+.form-group {
+    margin: 0 15px 0;
+    text-align: left;
+}
+
+.text {
+    color: #fff;
+    display: block;
+    margin: 0 1vw 0; /* arriba | abajo | derecha | izquierda */
+    font-weight: bold;
+}
+
+.styled-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.styled-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+}
+
+.btn {
+    margin: 15px;
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+    color: #fff !important;
+    box-shadow: 0 0 0.5rem #f3923d;
+    transition: all 0.4 ease;
+}
